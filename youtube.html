@@ -6,6 +6,11 @@
     <title>Youtube</title>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
      <style>
+          * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
         
         .left img{
             width:90px;
@@ -16,83 +21,28 @@
             
             align-items: center;
             gap:20px;
+            width: 250px;
             
         }
-        * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Roboto, Arial, sans-serif;
-}
+      
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 56px;
-    padding: 0 16px;
-    background: white;
-    display: flex;
+
+    
+    height: 10vh;
+    display:flex;
+    align-items:center;
+    padding:0 20px;
     justify-content: space-between;
-    align-items: center;
-    z-index: 10;
 }
-
-
-
-.left i {
-    font-size: 20px;
-    cursor: pointer;
-}
-
-
-
-.input-box {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex: 0 1 640px;
-}
-.input-box input {
-    flex: 1;
-    height: 40px;
-    padding: 0 16px;
-    font-size: 16px;
-    border: 1px solid lightgray;
-    border-radius: 40px 0 0 40px;
-    outline: none;
-}
-.input-box input:focus {
-    border-color: royalblue;
-}
-.input-box button {
-    height: 40px;
-    width: 64px;
-    border: 1px solid lightgray;
-    border-left: none;
-    border-radius: 0 40px 40px 0;
-    background: whitesmoke;
-    cursor: pointer;
-    margin-left: -12px;
-}
-.input-box  i {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: whitesmoke;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
 
 .right {
     display: flex;
     align-items: center;
     gap: 20px;
     font-size: 15px;
+    justify-content: flex-end;
+width: 250px;
 }
 .right i {
     font-size: 18px;
@@ -102,25 +52,52 @@ header {
     width: 32px;
     height: 32px;
     border-radius: 50%;
+    background-color: lightgray;
     cursor: pointer;
 }
 
-
-.left-menu {
-    position: fixed;
-    top: 56px;
-    left: 0;
-    width: 72px;
+.input-box {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 24px;
-    padding-top: 16px;
 }
-.left-menu i {
-    font-size: 20px;
+
+.input-box input {
+    width: 500px;
+    height: 40px;
+    padding-left: 15px;
+    font-size: 16px;
+    border: 1px solid lightgray;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+}
+
+.search-btn {
+    height: 40px;
+    width: 60px;
+    border: 1px solid lightgray;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    background-color: whitesmoke;
     cursor: pointer;
 }
+
+.mic {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.create {
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    font-size: 14px;
+    cursor: pointer;
+}
+
      </style>
 </head>
 <body>
@@ -131,23 +108,19 @@ header {
         </div>
         <div class="input-box">
              <input type="text" placeholder="Search">
-              <button><i class="fa-solid fa-magnifying-glass"></i></button>
-              <i class="fa-solid fa-microphone"></i>
+              <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <button class="mic"><i class="fa-solid fa-microphone"></i></button>
         </div>
         <div class="right">
-             <i class="fa-solid fa-plus"></i>
-             Create            
+             <div class="create">
+    <i class="fa-solid fa-plus"></i> Create
+</div>
              <i class="fa-regular fa-bell"></i>
               <img class="name"
-                src="https://lh3.google.com/u/0/ogw/AF2bZyjo4tdIg3M6aK61rt2xeOPaRS2Ro32hvEbrC-73apNGXQ=s32-c-mo" alt=""
+              src="https://lh3.google.com/u/0/ogw/AF2bZyjo4tdIg3M6aK61rt2xeOPaRS2Ro32hvEbrC-73apNGXQ=s32-c-mo" alt=""
                 class="src">
         </div>
-        <div class="left-menu">
-            <i class="fa-solid fa-house"></i>
-            <i class="fa-brands fa-youtube-shorts"></i>
-            <i class="fa-brands fa-square-youtube"></i>
-            <i class="fa-regular fa-circle-user"></i>
-        </div>
+       
         
     </header>
     

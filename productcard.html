@@ -39,13 +39,10 @@
             box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
             ;
             cursor: pointer;
-            transition: transfoem 1s;
+            
         }
 
-        .card:hover {
-            transform: scale(1.01);
-
-        }
+        
 
         button {
             padding: 10px 40px;
@@ -71,8 +68,7 @@
     align-items: center;
     gap: 4px;
     padding: 4px 16px;
-    overflow-x: auto;
-    white-space: nowrap;
+    
 }
 a {
     color: white;
@@ -124,12 +120,51 @@ a:hover {
     background-color: darkorange;
 }
 
- 
-            
+ .container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+     gap: 20px;
+}
+
+.side-menu {
+    
+    background-color:whitesmoke;
+}
+
+.menu-top {
+    background-color: rgb(4, 8, 19);
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+}
+
+
+
+.menu-bottom h3 {
+    padding: 20px 30px 10px 30px;
+    border-top: 1px solid lightgray;
+}
+
+.menu-bottom a {
+    display: block;
+    padding: 10px 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu-bottom a:hover {
+    background-color: white;
+}  
     
     
 
-
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
         
 
 
@@ -184,12 +219,31 @@ a:hover {
                 </div>
                 <div class="menu-bottom">
                     <h3>Trending</h3>
-                    
+            <a href="">Best sellers</a>
+            <a href="">New Releases</a>
+            
+
                     <h3>Shop by category</h3>
+            <a href="">Mobiles,Computers</a>
+            <a href="">Men's Fashion</a>
+            <a href="">Women's Fashion</a>
+            <a href="">Home & Kitchen</a>
+
                     <h3>Programs & Features</h3>
+            <a href="">Gift cards</a>
+            <a href="">Amazon Launchpad</a>
+            <a href="">Amazon Business</a>
+            <a href="">Handloom & Handicrafts</a>
+                     <a href="">International Brands</a>
+            
                     <h3>Help & Settings</h3>
+                   
+            <a href="">Your account</a>
+            <a href="">Customer service</a>
+            <a href="">Sign in</a>
                 </div>
             </div>
+            <div class="cards">
             <div class="card">
             <img src="https://m.media-amazon.com/images/I/51gtdr2AaoL._AC_UL320_.jpg" alt="">
             <p>Nothing Phone (4b) 5G (White, 8GB RAM, 128GB Storage) | Snapdragon 6 Gen 4 Octa-Core Processor | 50MP +
@@ -275,6 +329,7 @@ a:hover {
             <p>vivo V80 5G (Sunrise Anthem, 8GB RAM, 256GB Storage) with No Cost EMI/Additional Exchange Offers</p>
             <h3>M.R.P <span id="lt">₹1,18,999</span><span id="ap"> ₹69,999</span></h3>
             <button>Buy</button>
+        </div>
         </div>
     </div>
         
